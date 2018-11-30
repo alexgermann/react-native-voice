@@ -301,13 +301,13 @@ public class VoiceModule extends ReactContextBaseJavaModule implements Recogniti
 
   @Override
   public void onError(int errorCode) {
-    String errorMessage = String.format("%d/%s", errorCode, getErrorText(errorCode));
-    WritableMap error = Arguments.createMap();
-    error.putString("message", errorMessage);
-    WritableMap event = Arguments.createMap();
-    event.putMap("error", error);
-    sendEvent("onSpeechError", event);
-    Log.d("ASR", "onError() - " + errorMessage);
+    //String errorMessage = String.format("%d/%s", errorCode, getErrorText(errorCode));
+    //WritableMap error = Arguments.createMap();
+    //error.putString("message", errorMessage);
+    //WritableMap event = Arguments.createMap();
+    //event.putMap("error", error);
+    //sendEvent("onSpeechError", event);
+    //Log.d("ASR", "onError() - " + errorMessage);
   }
 
   @Override
