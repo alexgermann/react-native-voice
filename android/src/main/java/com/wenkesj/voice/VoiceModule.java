@@ -294,9 +294,9 @@ public class VoiceModule extends ReactContextBaseJavaModule implements Recogniti
   public void onEndOfSpeech() {
     WritableMap event = Arguments.createMap();
     event.putBoolean("error", false);
-    sendEvent("onSpeechEnd", event);
+    //sendEvent("onSpeechEnd", event);
     Log.d("ASR", "onEndOfSpeech()");
-    isRecognizing = false;
+    //isRecognizing = false;
   }
 
   @Override
